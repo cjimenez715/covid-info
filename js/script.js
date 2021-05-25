@@ -1,4 +1,4 @@
-//Global vairbales
+//Global variables
 const baseUrl = "https://api.covid19api.com/";
 const countriesUrl = "countries";
 const countryUrl = "country";
