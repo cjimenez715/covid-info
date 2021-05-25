@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Covid-19</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>COVID - 19</h1>
+      <div class="summary">
+        <div class="summary-info">
+          <h2 class="title">Total Confirmados</h2>
+          <h2 class="data" id="txtTotalConfirmed">0</h2>
+          <div class="comparison">
+            <i id="iconTotalConfirmedComparison" class="fa"></i>
+            <h2 id="txtTotalConfirmedComparison"></h2>
+          </div>
+        </div>
+        <div class="summary-info">
+          <h2 class="title">Total Mortes</h2>
+          <h2 class="data" id="txtTotalDeaths">0</h2>
+          <div class="comparison">
+            <i id="iconTotalDeathsComparison" class="fa"></i>
+            <h2 id="txtTotalDeathsComparison"></h2>
+          </div>
+        </div>
+        <div class="summary-info">
+          <h2 class="title">Total Recuperados</h2>
+          <h2 class="data" id="txtTotalRecovered">0</h2>
+          <div class="comparison">
+            <i id="iconTotalRecoveredComparison" class="fa"></i>
+            <h2 id="txtTotalRecoveredComparison"></h2>
+          </div>
+        </div>
+        <div class="summary-info">
+          <h2 class="title" id="lblUpdated">Actualizacao</h2>
+          <h2 class="data" id="txtUpdated">0</h2>
+          <div class="comparison">
+            <i id="iconUpdatedComparison" class="fa"></i>
+            <h2 id="txtUpdatedComparison"></h2>
+          </div>
+        </div>
+      </div>
+      <div class="constrols">
+        <div>
+          <select name="cmbCountries" id="cmbCountries"></select>
+        </div>
+        <div>
+          <input id="dtpCurrentDate" type="date" />
+         
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
