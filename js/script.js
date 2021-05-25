@@ -202,7 +202,7 @@ const setSummaryByCountryAndDate = (data) => {
   txtUpdatedComparison.innerText = "Diario " + Math.abs(formatNumbers(totalActives - totalActivesLast));
 
 
-  if((totalConfirmed - totalConfirmedLast) > (totalActivesLast - totalConfirmedBeforeLast)){
+  if((totalConfirmed - totalConfirmedLast) > (totalConfirmedLast - totalConfirmedBeforeLast)){
     iconTotalConfirmedComparison.classList.remove("fa-long-arrow-alt-down");
     iconTotalConfirmedComparison.classList.add("fa-long-arrow-alt-up");
   } else {
@@ -210,7 +210,7 @@ const setSummaryByCountryAndDate = (data) => {
     iconTotalConfirmedComparison.classList.add("fa-long-arrow-alt-down");
   }
 
-  if((totalConfirmed - totalConfirmedLast) > (totalDeathsLast - totalDeathsBeforeLast)){
+  if((totalDeaths - totalDeathsLast) > (totalDeathsLast - totalDeathsBeforeLast)){
     iconTotalDeathsComparison.classList.remove("fa-long-arrow-alt-down");
     iconTotalDeathsComparison.classList.add("fa-long-arrow-alt-up");
   } else {
